@@ -8,6 +8,4 @@ const getFact = async () => {
     secondDiv.innerText = response.data[randomIndex].text
 }
 
-secondButton.addEventListener('click', getFact) 
-
-
+getFact()
