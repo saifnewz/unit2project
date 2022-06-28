@@ -1,7 +1,6 @@
-const button = document.querySelector(".first-button")
-const secondButton = document.querySelector(".second-button")
+const button = document.querySelector('.button')
 const textDiv = document.querySelector('div')
-const secondDiv = document.querySelector(".second-div")
+
 
 const getFact = async () => {
     let response = await axios.get(
@@ -13,5 +12,6 @@ const getFact = async () => {
 
 button.addEventListener('click', getFact) 
 
-secondButton.addEventListener('click', getFact) 
+
+
 
