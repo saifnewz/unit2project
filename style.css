@@ -18,10 +18,16 @@ h2 {
 
 nav{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 img{
     margin: auto;
     display: block;
 }
+ .button{
+    position: absolute;
+    left: 9x;
+    top: 0px;
+    display: block;
+ }
