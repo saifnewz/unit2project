@@ -1,14 +1,8 @@
 div {
     background-color: aqua;
+    font-size: 20px;
 }
 
 h1 {
     background-color: aquamarine;
-}
-
-.third-div {
-    text-align: center;
-    font-family: Raleway;
-    font-size: 3em;
-    font-weight: bold;
 }

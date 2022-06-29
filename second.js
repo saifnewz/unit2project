@@ -1,9 +1,13 @@
 const secondButton = document.querySelector('.second-button')
 const secondDiv = document.querySelector(".second-div")
 
-const getMeowFact = async () => {
-    const response = await axios.get(`https://virtserver.swaggerhub.com/whiterabbit8/meowfacts/1.0.0/`)
-    secondDiv.innerText = response.data[0]
+const getFact = async () => {
+    let response = await axios.get(
+        `https://cat-fact.herokuapp.com/facts`
+    )
+    console.log(response)
+    const randomIndex = Math.floor(Math.random()*response.data.length) 
+    secondDiv.innerText = response.data[randomIndex].text
 }
 
-secondButton.addEventListener('click', getMeowFact) 
+secondButton.addEventListener('click', getFact) 
